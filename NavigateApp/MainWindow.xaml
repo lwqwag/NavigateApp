@@ -13,12 +13,9 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <Frame x:Name="MainFrame"
-               NavigationUIVisibility="Hidden"
-               ScrollViewer.CanContentScroll="False"
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" ScrollViewer.CanContentScroll="False"
                HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"
                VerticalAlignment="Stretch" VerticalContentAlignment="Center"/>
-
         <Button Grid.Row="1" Command="{Binding ToPageOneCommand}">Page One</Button>
     </Grid>
 

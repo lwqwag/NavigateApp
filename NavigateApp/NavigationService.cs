@@ -18,7 +18,6 @@ namespace NavigateApp
         public string CurrentPageKey
         {
             get => _currentPageKey;
-
             private set
             {
                 Set(() => CurrentPageKey, ref _currentPageKey, value);
