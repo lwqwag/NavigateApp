@@ -1,0 +1,27 @@
+﻿<Window x:Class="NavigateApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NavigateApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" DataContext="{Binding Main,Source={StaticResource Locator}}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Frame x:Name="MainFrame"
+               NavigationUIVisibility="Hidden"
+               ScrollViewer.CanContentScroll="False"
+               HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"
+               VerticalAlignment="Stretch" VerticalContentAlignment="Center"/>
+
+        <Button Grid.Row="1" Command="{Binding ToPageOneCommand}">Page One</Button>
+    </Grid>
+
+
+
+</Window>
