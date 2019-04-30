@@ -1,2 +1,2 @@
 # NavigateApp
-Navigate for wpf
+Navigate for wpf using mvvmLight
